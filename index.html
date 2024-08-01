@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Flexbox and Grid</title>
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="./views/style.css">
+
+	<!-- Adding Montserrat custom font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+	<!-- Adding Open sans custom font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+	<!-- Adding Raleway custom font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">	
+</head>
+<body>
+	<section class="section1">
+		<!-- navbar section -->
+		<nav>
+			<ol>
+				<li class="logo">
+					<img class="desktop" src="./images/navbar/logo1.png" alt="Logo">
+					<img class="mobile" src="./images/navbar/logo1_mobile.png" alt="Logo">
+				</li>
+				<li class="links">
+						<a href="#">About me</a>
+						<a href="#">Skills</a>
+						<a href="#">Portfolio</a>
+						<a href="#" class="contact">CONTACT ME</a>
+				</li>
+				<li class="menu dropdown">
+						<img class="dropbtn" src="./images/navbar/hamburgerMenu.svg" alt="menu">
+						<div class="dropdown-content">
+							<a href="#">About me</a>
+							<a href="#">Skills</a>
+							<a href="#">Portfolio</a>
+							<a href="#">CONTACT ME</a>
+						</div>
+				</li>
+			</ol>
+		</nav>
+		<!-- hero section -->
+			<div class="hero">
+				<div class="boxa">
+					<h6>Hi, I am</h6>
+					<h2>Tomasz Gajda</h2>
+					<p>Front-end Developer / UI Designer</p>
+					<div class="btns">
+						<img class="icon one" src="./images/hero/icon1.svg" alt="icon 1">
+						<img class="icon" src="./images/hero/icon2.svg" alt="icon 2">
+						<img class="icon" src="./images/hero/icon3.svg" alt="icon 3">
+					</div>
+				</div>
+				<div class="boxb">
+					<img class="userImage" src="./images/hero/userImage.svg" alt="user image">
+					<div class="imposterPhoto">this is not my photo,<br> but I dearly hope to <br> get one just like this</div>
+				</div>
+			</div>
+	</section>
+
+		<!-- section2 banner under the hero section -->
+	<section class="section2">
+		<h2>IT BERRIES</h2>
+		<p>
+			Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est. Morbi commodo, eros in dignissim tempus, lacus odio rutrum augue, in semper sem magna quis tellus. Etiam enim erat, suscipit eu semper a, dictum sit amet elit. Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet varius turpis vel pharetra. Ut ante justo, consequat vitae elementum tempor, accumsan nec eros.
+		</p>
+		<div class="invisibleButton">
+			<span class="readButton">READ MORE</span>
+		</div>
+	</section>
+
+
+<section class="section3">
+			<!-- About me section -->
+			<div class="aboutMe">
+				<div class="aboutMeDiv">
+					<h2>ABOUT ME</h2>
+					<p>
+						Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem <br> sed viverra. In vel urna quis libero viverra facilisis ut ac est.
+					</p>
+				</div>
+				<div class="invisibleButton2">
+					<span class="exploreButton">EXPLORE</span>
+				</div>
+				<div class="separatorBlack1">
+					<img src="./images/aboutMe/separatorBlack1.svg" alt="separator black 1">
+				</div>
+			</div>
+		
+					<!-- services section within the about me section -->
+	<div class="services">
+		<div class="line1">
+			<div class="design">
+				<img src="./images/aboutMe/designIcon.svg" alt="design icon">
+				<h6>DESIGN</h6>
+				<p>
+					I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.
+				</p>
+			</div>
+			<div class="development">
+				<img src="./images/aboutMe/developmentIcon.svg" alt="development icon">
+				<h6>DEVELOPMENT</h6>
+				<p>
+					I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.
+				</p>
+			</div>
+		</div>
+		<div class="line2">
+			<div class="maintenance">
+				<img src="./images/aboutMe/maintenanceIcon.svg" alt="maintenance icon">
+				<h6>MAINTENANCE</h6>
+				<p>
+					I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- separator -->
+	<div class="separatorBlack2">
+		<img src="./images/aboutMe/separatorBlack2.svg" alt="separator black 2">
+	</div>
+
+	<!-- Skills section -->
+<div class="skills">
+	<div class="skillsDiv">
+		<h2>SKILLS</h2>
+	</div>
+	<div class="usingNow">
+		<div class="usingNowDiv">
+			<h4 class="usingNowText">USING NOW:</h4>
+		</div>
+				<div class="row1">
+					<div class="card">
+						<img src="./images/skills/html.svg" alt="html">
+						<span>HTML</span>
+					</div>
+					<div class="card">
+						<img src="./images/skills/css3.svg" alt="css3">
+						<span>CSS3</span>
+					</div>
+					<div class="card">
+						<img src="./images/skills/sass.svg" alt="sass">
+						<span>SASS</span>
+					</div>
+					<div class="card">
+						<img src="./images/skills/javascript.svg" alt="Javascript">
+						<span>JAVASCRIPT</span>
+					</div>
+				</div>
+				<div class="row2">
+					<div class="card">
+						<img src="./images/skills/react.svg" alt="React">
+						<span>REACT</span>
+					</div>
+					<div class="card">
+						<img src="./images/skills/bootstrap.svg" alt="Bootstrap">
+						<span>BOOTSTRAP</span>
+					</div>
+					<div class="card">
+						<img src="./images/skills/git.svg" alt="Git">
+						<span>GIT</span>
+					</div>
+					<div class="card">
+						<img src="./images/skills/figma.svg" alt="Figma">
+						<span>FIGMA</span>
+					</div>
+				</div>
+
+				<div class="learning">
+					<div class="learningDiv">
+						<h4 class="learningText">LEARNING:</h4>
+					</div>
+					<div class="row1">
+						<div class="card">
+							<img src="./images/skills/nodeJS.svg" alt="NodeJS">
+							<span>NODEJS</span>
+						</div>
+						<div class="card">
+							<img src="./images/skills/mysql.svg" alt="MySql">
+							<span>MYSQL</span>
+						</div>
+						<div class="card">
+							<img src="./images/skills/mongoDb.svg" alt="MongoDB">
+							<span>MONGODB</span>
+						</div>
+						<div class="card">
+							<img src="./images/skills/typescript.svg" alt="Typescript">
+							<span>TYPESCRIPT</span>
+						</div>
+				</div>
+
+				<div class="otherSkills">
+					<div class="otherDiv">
+						<h4 class="otherText">OTHER SKILLS:</h4>
+					</div>
+						<div class="row1">
+							<div class="card">
+								<img src="./images/skills/angielski.svg" alt="ANGIELSKI C1/C2">
+								<span>ANGIELSKI <br> C1/C2</span>
+							</div>
+							<div class="card">
+								<img src="./images/skills/hiszpanski.svg" alt="HISZPAŃSKI B1/B2">
+								<span>HISZPAŃSKI <br> B1/B2</span>
+							</div>
+							<div class="card">
+								<img src="./images/skills/c++.svg" alt="C++">
+								<span>C++</span>
+							</div>
+							<div class="card">
+								<img src="./images/skills/c.svg" alt="C">
+								<span>C</span>
+							</div>
+						</div>
+				</div>
+		</div>
+</div>
+
+<section class="section4">
+	<!-- Portfolio section -->
+	<!-- <img class="portfolioImage" src="./images/portfolio/backdrop.svg" alt="Portfolio backdrop"> -->
+	<div class="portfolioDiv">
+		<h2>PORTFOLIO</h2>
+	</div>
+<div class="portfolioFilter">
+		<span>ALL</span>
+		<span class="pSpan">CODED</span>
+		<span class="pSpan">DESIGNED</span>
+	</div>
+
+<!-- Projects section -->
+<div class="projects">
+	<div class="row1">
+			<img src="./images/projects/abstract.svg" alt="Abstract purple image">
+			<div class="projectWriteup">
+				<span class="pwLine1">coded, designed</span> 
+				<span class="pwLine2">eatsome.</span> 
+				<span class="pwLine3">Restaurant browsing in React.js (Using Yelp API)</span> 
+				
+				<div class="pwLine4">
+					<span class="s1">DEMO</span>
+					<span class="s2">MORE</span>
+				</div>
+			</div>
+			<img src="./images/projects/centerImage.svg" alt="Center image">
+			<img src="./images/projects/car.svg" alt="car">
+	</div>
+	<div class="row2">
+		<img src="./images/projects/centerImage.svg" alt="Abstract purple image">
+		<img src="./images/projects/car.svg" alt="Center image">
+		<img src="./images/projects/abstract.svg" alt="car">
+	</div>
+	<p class="projectsP">And many more to come!</p>
+</div>
+
+<!-- contact section -->
+<div class="contact">
+	<h2>CONTACT</h2>
+	<p>
+	Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.
+	</p>
+	<img src="./images/aboutMe/separatorBlack2.svg" alt="">
+		<form class="contact">
+			<input type="text" id="name" name="name" placeholder="ENTER YOUR NAME*"><br><br>
+			<input type="text" id="email" name="email" placeholder="ENTER YOUR EMAIL*"><br><br>
+			<input type="text" id="phone" name="phone" placeholder="PHONE NUMBER"><br><br>
+			<input type="text" id="message" name="phone" placeholder="YOUR MESSAGE*"><br><br>
+			<input type="submit" value="Submit">
+		</form> 
+</div>
+</section>
+<!-- Footer section -->
+<footer>
+	<img src="./images/footer/backToTop.svg" alt="scroll to top button">
+	<div class="socials">
+		<img src="./images/footer/facebook.svg" alt="facebook">
+		<img src="./images/footer/linkedin.svg" alt="linkedin">
+		<img src="./images/footer/instagram.svg" alt="instagram">
+		<img src="./images/footer/email.svg" alt="email">
+	</div>
+	<p>@2020 Tomasz Gajda All Rights Reserved.</p>
+</footer>
+</body>
+</html>
