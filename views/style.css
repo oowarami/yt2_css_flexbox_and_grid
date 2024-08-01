@@ -87,15 +87,17 @@ html {
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		padding: unset;
+		padding: 0;
 	}
 	.section1 nav {
 		background-color: black;
 		min-height: 60px;
-		padding: 20px 42px 10px 42px;
+		/* padding: 20px 42px 10px 42px; */
+		padding: 10px 20px
 	}
 	.section1 .logo .mobile {
 		display: flex;
+		max-width: 80%
 	}
 	.section1 .logo .desktop {
 		display: none;
@@ -221,13 +223,24 @@ html {
 }
 
 .hero .boxb .imposterPhoto {
-	position: absolute; /* Position text over the image */
-	bottom: 0; /* Align to the bottom */
-	left: 50%; /* Center horizontally */
-	transform: translateX(-50%); /* Adjust for horizontal centering */
+	position: absolute; 
+	bottom: 0; 
+	left: 50%; 
+	transform: translateX(-50%); 
 	text-wrap: wrap;
 	display: flex;
 	text-align: center;
+}
+
+/* Mobile section hero */
+@media screen and (max-width: 900px) {
+	.userImage {
+		display: none;
+	}
+
+	.imposterPhoto {
+		display: none;
+	}
 }
 
 /* SECTION 2 */
@@ -587,14 +600,15 @@ html {
 	margin-bottom: 5px;
 }
 
-.skills .row1,
+.row1,
 .row2 {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid */
+	grid-template-columns: repeat(4, 1fr); 
 	width: 70vw;
 	justify-items: center;
 	margin-left: 180px;
 }
+
 
 .card {
 	display: flex;
@@ -614,9 +628,9 @@ html {
 
 /* Mobile view for skills */
 @media screen and (max-width: 900px) {
-	/* .skills{
+	.skills{
 		margin-left: -50px;
-	} */
+	}
 
 	.sectionHeader2 {
 		text-align: center;
@@ -663,19 +677,26 @@ html {
 
 /* SECTION 4 */
 
+/* PORTFOLIO SECTION */
+
+.section4 .portfolio {
+	display: flex;
+	flex-direction: column;
+}
+
 .section4 .portfolioDiv {
+	background-image: url(/images/portfolio/backdrop.svg);
+	background-repeat: no-repeat;
+	height: 321px;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-.section4 {
-	display: flex;
-	flex-direction: column;
-	background-image: url(/images/portfolio/backdrop.svg);
-	background-repeat: no-repeat;
-	height: 321px;
-	background-size: cover;
+
+.portfolioDiv h2 {
+	margin-top: 100px;
 }
 
 .portfolioFilter {
@@ -695,22 +716,24 @@ html {
 	text-decoration-color: #7c7c7c;
 }
 
-.section5 {
-	display: flex;
-	flex-direction: column;
+/* PROJECTS SECTION */
+.projects .pr-row1, .pr-row2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); 
+	justify-items: center;
+	margin-left: 0px;
 }
 
-.projects .row1,
-.row2 {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr); /* Create a 4-column grid */
-	justify-items: center;
+.projects .projImg {
+	min-width: 33.3vw;
+	min-height: 30.8vh;
+
 }
 
 .projectWriteup {
 	position: absolute;
-	left: 50%; /* Center horizontally */
-	transform: translateX(-50%); /* Adjust for horizontal centering */
+	left: 50%; 
+	transform: translateX(-50%); 
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -764,7 +787,7 @@ html {
 .pwLine4 span {
 	border-right: 1px solid white;
 	border-left: 1px solid white;
-	margin-left: 5px ;
+	margin-left: 5px;
 	padding-left: 40px;
 	padding-right: 40px;
 }
@@ -780,4 +803,73 @@ html {
 	justify-content: space-evenly;
 	align-items: center;
 	height: 10vh;
+}
+
+/* .contact {
+	display: flex;
+	flex-direction: column;
+	
+} */
+
+ .contact .contactDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+ }
+
+ .contact h2 {
+	font-family: 'Montserrat', sans-serif;
+	border: 6px solid black;
+	padding: 20px 80.9px 20px 79.25px;
+	margin-top: 80px;
+	margin-left: 100px;
+}
+
+.contact p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 200px;
+}
+
+/* SEPARATOR */
+.separatorBlack3 {
+	margin-top: 75px;
+	margin-left: 46.25vw;
+	text-align: center;
+}
+
+/* Mobile view for separator 3 */
+@media screen and (max-width: 900px) {
+	.separatorBlack3 {
+		margin-left: unset;
+		margin-top: auto;
+		width: 80%;
+	}
+}
+
+.contact .contactForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 123px;
+	margin-left: 25px;
+}
+.contact .contactForm input{
+	border-left: 2px black solid;
+	border-bottom: 2px black solid;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 50px;
+	margin-top: 50px;
 }
